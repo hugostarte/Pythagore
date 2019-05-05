@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+		<title>Pythagore</title>
+		<link href="CSS/monFichierCSS.css" type="text/css" rel="stylesheet" media="screen">
+		<SCRIPT  type="text/javascript" SRC="javascript/monFichierJavascript.js"> </SCRIPT>
+		<meta name="viewport" content="width=device-width,initial-scale=0.3" /> 
+		
+	</head>
+	
+	<body>
+		<div id="accueil" class="bloc">
+			<h1 id="title">Pythagore</h1>
+			<p style="text-align: center; margin-top:-50px; ">“L'homme est mortel par ses craintes, immortel par ses désirs. ” #Pythagore</p>
+			<ul id="ulname">
+				<li><a href="#">Accueil</a></li>
+				<li><a href="#Presentation" onclick="document.getElementById('Presentation').style.display = 'block';document.querySelector('.fond-boite').scrollIntoView({behavior:'smooth'});">Presentation</a></li>
+				<li><a href="#calculateur" onclick="document.getElementById('calculateur').style.display = 'block';">calculateur</a></li>
+				<li><a href="#ChartreGraphique" onmouseover="document.getElementById('ChartreGraphique').style.display = 'block';document.getElementById('cache').style.display = 'block';" onmousedown="document.getElementById('ChartreGraphique').style.display = 'none';document.getElementById('cache').style.display = 'none';">Chartre Graphique</a></li>
+			</ul>
+		</div>		
+		<div id="ChartreGraphique" style="display: none; width: 150px; background-color: rgba(0,0,0,0.4); margin-left:68%; margin-right:25%;margin-top: -32%; padding:30px; @-webkit-keyframes bac_content {0% {opacity: 0.2;-webkit-transform: translateY(-100%);}	100% {opacity: 1;-webkit-transform: translateY(0);}};animation: bac_content 2s ease both;"><p>Hééé molé molooo ce n'est qu'une enfant elle est encore en construction</p></div>
+		<div id="cache" style="margin-top: 20%; display: none;"><p></p></div>
+		<div id="Presentation" class="bloc" style="display: none;">
+			<div id="separation"></div>
+			<h1 id="PresentationTitre">Présentation :</h1>
+			<div class="PresentationTexte"><p>
+				Pythagore est un philosophe, mathématicien et réformateur religieux de la Grèce antique probablement né en 580 av. J.-C. sur une île de la mer Egée, et décédé en 495 av. J.-C. Surtout connu pour le théorème qui porte son nom, il aurait axé l'essentiel de son travail sur la question de l'existence d'une loi du nombre en toute chose, et d'un lien de proportionnalité mathématique dans des sciences aussi diverses que l'astronomie, la médecine, la musique, la spiritualité.
+
+				Reconnu par ses pairs comme la personnalité fondatrice de la logique, il semble que "l'un des plus grands esprits de la Grèce, le sage Pythagore" (Hérodote), "le premier maître universel" (Hegel), n'ait pourtant jamais rien écrit. Son parcours reste énigmatique pour les historiens, qui se fient davantage à l'école pythagoricienne qu'à son incarnation première. Pythagore aurait en effet fondé des communautés à caractère sectaire, chargées de répercuter ses travaux et ses thèses dans les régions traversées au cours de ses nombreux voyages au sud de l'Europe. 
+
+				L'école pythagoricienne repose sur le postulat que sur terre, toute chose est ordonnée et structurée en fonction de proportions numériques. Outre la formalisation du fameux théorème lié au triangle rectangle (a + b = c ), la théorie pythagoricienne repose sur l'existence d'un équilibre harmonieux dont toute science est à même de s'inspirer, y compris les sciences sociales. Personnalité complexe et féconde, Pythagore aurait révélé que la musique comportait une dimension cosmique et l'astronomie une dimension musicale. Concepteur d'une théorie de la réincarnation, il aurait démontré le pouvoir guérisseur du végétarisme.</p></div>
+			<div class="PresentationTexte"><p>Théorème de Pythagore :
+				On nomme a, b et c les longueurs des trois côtés d'un triangle.
+				Les triangles pour lesquels on a la relation a²+ b² = c² sont tous les triangles rectangles dont l'hypoténuse est le côté de longueur c, et seulement eux.
+				Utilisation du théorème de Pythagore pour calculer la longueur d'un côté d'un triangle rectangle :
+				Dans un triangle rectangle, le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés.
+				Si ABC est un triangle rectangle en A, alors AB² + AC²= BC² .	#Merci Wiki</p></div>
+		</div>
+
+		<div id="calculateur" class="bloc" style="display: none;">
+			<div id="separation"></div>
+			<h1 id="PresentationTitre">Calculateur :</h1>
+			<img src="images/pythagore.png" id="pythagoreimg" height="400px" style="margin-left: 28%;margin-right: 27%; padding-bottom: 0px;z-index: 0;">
+			<div id="blocCalcul">
+				<label style="font-family: 'Indie Flower', cursive;">Vous pouvez utiliser le théorème</br> de Pythagore ci-dessous :</label></br>
+				<input type="number" class="entree" name="" id="entreea" placeholder="A...">
+				<input type="number" class="entree" name="" id="entreeb" placeholder="B...">
+				<input type="number" class="entree" name="" id="entreec" placeholder="C...">
+				<button id="calculer">Calculer</button></br></br>
+				<div id="resultat"></div></br>
+				<label style="font-family: 'Indie Flower', cursive;">Il vous suffit de rentrer les valeurs en centimètre de deux cotés et l'algorythme s'occupe de vous donner la dernière</label></br>
+				<label style="font-family: 'Indie Flower', cursive; margin-left: 62%; margin-right: 30%; width:100px;text-decoration: underline;" id="name"> <a href="mailto:hugostarte1@aol.fr" style="text-decoration: none;color: white;">Par ©Hugo Stawiarski  </a></label>
+			</div>
+		</div>
+	</body>
+
+</html>

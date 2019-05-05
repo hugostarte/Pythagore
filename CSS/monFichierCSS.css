@@ -1,0 +1,140 @@
+body{
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(100, 100, 100, 0.3) ), url('images/woods.jpg');
+	background-size: cover;
+	margin:0;
+	padding:0;
+	color: white;
+}
+
+#accueil{
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(100, 100, 100, 0.3) ), url('images/woods.jpg');
+	background-size: cover;
+	height:100%;
+}
+#title{
+	font-family: 'Indie Flower', cursive;
+	padding-top: 50px;
+	text-align: center;
+	color: #ffffffcc;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#Presentation{
+	background: linear-gradient( rgba(137, 135, 135, 0.1), rgba(100, 100, 100, 0.3) ), url(images/pines.jpg);
+	height: 100%;
+	background-size: cover;
+	margin-top: -22px;
+	animation: bac_content 2s ease both;
+}
+#ulname{
+	list-style: none;
+	margin-top: 50px;
+}
+#ulname li {
+	display: inline;
+	padding:15px;
+	font-family: "Asap", sans-serif;
+	text-transform: uppercase;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#ulname li:hover{
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius:5px;
+}
+
+#ulname li a{
+	border-bottom: 2px solid white;
+	text-decoration: none;
+	color: white;
+    font-weight: bold;
+
+
+}
+#ulname li a:hover, a:focus{
+	border-bottom: 3px solid #17470fc2;
+	padding-top: -25px;
+}
+
+#separation{
+	padding-top: 50px;
+}
+#presentationTitre{
+	margin-left: 25px;
+	padding:5px;
+	color: white;
+	height: 40px;
+    width: 200;
+    border: 4px double white;
+}
+.PresentationTexte{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 4px double white;
+	margin-top: 50px;
+}
+.PresentationTexte:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@-webkit-keyframes bac_content {
+	0% {
+		opacity: 0.2;
+		-webkit-transform: translateY(-100%);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+#calculateur{
+	animation: bac_content 2s ease both;
+	background: linear-gradient( rgba(76, 69, 69, 0.55), rgba(100, 100, 100, 0.33) ), url(images/teapont.jpg);
+	height: 1000px;
+	background-size: cover;
+	margin-top: -22px;	
+}
+#blocCalcul{
+	margin-top: -270px;
+	margin-left: 30%;
+	margin-right:30%;
+	padding:20px;
+	color: white;
+}
+.entree{
+	background-color: #0000007d;
+	border-radius: 5px;
+	border: 0px;
+	width: 60px;
+	color: white;
+}
+#entree::placeholder{
+	color:#e1e9e296;
+	margin-left: 0;
+}
+.entree:hover, .entree:focus{
+	background-color: #08080863;
+	border:1px solid #81a781a6;
+}
+button{
+	background-color: #154732e0;
+	border-radius: 5px;
+	border:1px solid #678267;
+}
+button:hover, button:focus{
+	background-color: #1b734ee0;
+	border:1px solid #81a781a6;
+}
+#erreur{
+	color: #6b0606e0;
+    font-weight: bold;
+}
